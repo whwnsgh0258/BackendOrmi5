@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>서비스 이름</title>
+</head>
+<body>
+  <!--
+    ?email=junhosvain%40naver.com&pwd=asd&gender=male&html=on&css=on&js=on
+    %40 = @ => URL인코딩
+    인코딩: 우리가 원하는 방식으로 문자를 변경 하는 방식
+    ex) hello world => hello%20world
+    디코딩: 인코딩된 언어를 다시 원본으로 복구
+  -->
+  <h1>서비스 이름</h1>
+  <section>
+    <h2>로그인</h2>
+    <form action="" method="get">
+      <label for="user-email">이메일</label>
+      <input type="email" name="email" id="user-email">
+      <label for="user-pwd">패스워드</label>
+      <input type="password" name="pwd" id="user-pwd">
+
+      <fieldset>
+        <legend>성별</legend>
+        <label for="user-male">남자</label>
+        <input type="radio" name="gender" id="user-male" value="male">
+        <label for="user-female">여자</label>
+        <input type="radio" name="gender" id="user-female" value="female">
+        <label for="user-none">선택안함</label>
+        <input type="radio" name="gender" id="user-none" value="none">
+      </fieldset>
+
+      <fieldset>
+        <legend>사용기술</legend>
+        <label for="html">HTML</label>
+        <input type="checkbox" name="html" id="html">
+        <label for="css">CSS</label>
+        <input type="checkbox" name="css" id="css">
+        <label for="js">JavaScript</label>
+        <input type="checkbox" name="js" id="js">
+      </fieldset>
+
+      <button>회원가입</button>
+    </form>
+  </section>
+</body>
+</html>
