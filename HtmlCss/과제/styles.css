@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+a {
+    text-decoration: none;
+}
+/*전체 박스*/
+.login{
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+    width: 350px;
+    height: 140px;
+}
+/*상단글*/
+.text{
+    box-sizing: border-box;
+    width: 215px;
+    margin: 19px 16px;
+
+}
+/*로그인 박스*/
+.login-btn{
+    box-sizing: border-box;
+    color: #FFFFFF;
+    width:102px;
+    height: 18px;
+    margin: auto;
+}
+.login-box{
+    box-sizing: border-box;
+    background-color: #711BFF;
+    width: 318px;
+    height: 40px;
+    border-radius: 4px;
+    margin: 16px 0 0 16px;
+    padding: 11px 11px 0 108px ;
+}
+.login-img{
+    box-sizing: border-box;
+    width:64px;
+    height: 18px;
+}
+.login-box span{
+    margin-bottom: 11px;
+    font-size: 15px
+}
+/*아이디, 비밀번호, 회원가입*/
+.search{
+    text-underline: none;
+    text-decoration: none;
+    margin: 16px;
+    color: #767676;
+    width: 318px;
+    height: 16px;
+}
+.search .register{
+    text-align: right;
+    margin-left: 120px;
+}
+/* 아이디 찾기, 비밀번호 찾기, 회원가입의 글자색 변경 */
+.search .register, .search .id, .search .pwd {
+    color: #767676;
+}
