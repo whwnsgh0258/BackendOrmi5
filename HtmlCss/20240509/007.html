@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <title>CSS Box Model</title>
     <style>
-        div{
-          width: 100px;
-          height: 100px;
-          padding: 10px;
-          border: 10px dotted black;
-          margin: 10px;
-          background-color: lime;
+        *{
+            margin: 0;
+            padding: 0;
+            color:white;
+        }
+        .box1{
+            position: relative;
+            background-color: green;
+            width: 100px;
+            height: 100px;
+        }
+        .box2{
+            position: absolute;
+            top: 30px;
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+        .box3{
+            position: static;
+            width: 100px;
+            height: 100px;
+            background-color: red;
         }
     </style>
 </head>
 <body>
-    <div>Hello world!!!</div>
+<div class="box3">박스3</div>
+    <div class="box1">박스1
+        <div class="box2">박스2</div>
+    </div>
 </body>
 </html>

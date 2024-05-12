@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    *{
+      padding:0;
+      margin: 0;
+    }
+    ul{
+      display: flex;
+      list-style: none;
+      justify-content: space-evenly;
+    }
+    li{
+      width: 50px;
+      height: 50px;
+      background-color: teal;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+</ul>
+<!-- flex가 사용되면 주축과 교차측이 생기게 되고 justify-content를 이용하여 주축 기준으로 flex-item을 어디부터 정렬할지 flex-start, center, flex-end 속성값으로 선택할 수 있고 이것은 교차측또한 마찬가지이다.-->
+<!-- flex-direction 을 사용하여 주 측의 방향을 row(행), column(열)로 나누어서 선택할 수 있다.(주측의 기본 방향은 기본으로 가로이다.)-->
+<!-- flex-direction 의 속성값은 row(기본값), column, row-reverse(flex-start 지점이 기존의 flex-end 지점으로 갑니다), column-reverse(flex-start 지점이 기존의 flex-end 지점으로 갑니다)-->
+<!-- justify-content 를 사용하여 flex-container 의 시작부분을 어디에서 시작할지 결정합니다-->
+<!-- space-between 각각의 flex-item 요소 사이의 일정한 공백을 만들어주는 속성 입니다.-->
+<!-- space-around 는 각각의 flex-item 양옆으로 일정한 공백을 만들어주는 속성값 입니다.-->
+<!-- space-evenly 는 space-around와 유사하지만 flex-item 양옆의 공백의 크기가 일정 합니.->
+</body>
+</html>
