@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>if문 실습</title>
+</head>
+<body>
+    <h1>if문 실습</h1>
+    <div>
+        두 가지 수를 전달하면 두 수의 합을 반환하는 함수를 만들어 주세요. 이때 두 가지 수를 전달하지 못했을 경우 “두 가지 수를 전달해야 합니다” 라는 메시지를 띄어야 합니다.
+    </div>
+    <h2>결과</h2>
+    <script>
+        function add(val1,val2){
+            if (val1,val2){
+                document.write("두값의 합은",val1+val2,"입니다.")
+                console.log("두값의 합은",val1+val2,"입니다.")
+            }else{
+                document.write("매개변수를 입력 하세요")
+                console.log("매개변수를 입력 하세요")
+            }
+        }
+        add(10,30)
+        /* 강사님 코드
+        function add(val1, val2){
+        if(String(val1 + val2) == 'NaN'){
+            console.log('두 가지 수를 전달해야 합니다.');
+        }
+        return val1 + val2;
+    }
+
+   console.log(add(10, 30));
+         */
+    </script>
+<!--    <h2>코드로 입력 받는게 아니라 input 값을 줘서 입력 해보기</h2>-->
+<!--    <div>-->
+<!--    </div>-->
+<!--    <script>-->
+<!--        let a;-->
+<!--        let b;-->
+
+<!--    </script>-->
+</body>
+</html>

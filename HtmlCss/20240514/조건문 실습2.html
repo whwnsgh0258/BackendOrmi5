@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const score = Number(prompt("성적을 입력 하세요"));
+
+    /* if 조건식 사용 처음에는 else if (score >= 80) 이부분을 else if (90>score >= 80)라고 작성하니까 제대로 된 값이 안나왔음
+    이유를 생각 해봤는데 이미 위의 조건(if (score >= 90))에서 false가 다음으로 넘어갔는데 또 범위를 줘서 값이 제대로 안나온것 같음
+    if (score >= 90){
+        document.write('A!<br>');
+    } else if (score >= 80){
+        document.write('B!<br>');
+    } else if (score >= 70){
+        document.write('C!<br>');
+    } else if (score >= 70){
+        document.write('D!<br>');
+    } else {
+        document.write('강해져서 돌아와라ㅋ<br>');
+    }
+    */
+    switch (true){
+        case score>90: // 해당 값은 true
+            document.write('A!<br>');
+            break;
+        case score>=80:
+            document.write('B!<br>');
+            break;
+        case score>=70:
+            document.write('C!<br>');
+            break;
+        case score>=60:
+            document.write('D!<br>');
+            break;
+        default:
+            document.write('강해져서 돌아와라ㅋ <br>');
+    }
+    document.write(score);
+</script>
+</body>
+</html>
