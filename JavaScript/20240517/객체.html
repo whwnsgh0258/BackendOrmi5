@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // const person = {
+    //     name: '재현',
+    //     age: 20,
+    //     gender: 'male'
+    // };
+    //
+    // for (let key in person) {
+    //     console.log(`${key}: ${person[key]}`);
+    // }
+
+    const me = {
+        name: 'junho',
+        age: '24세',
+        phoneNum: '010-9767-6660',
+        study: function (student){
+            student.dateUP();
+        }
+    };
+
+    const ormi = {
+        date: 1,
+        dateUP: function (){
+            this.date++;
+        }
+    };
+
+    me.study(ormi);
+    console.log(ormi.date);
+
+    // Person 생성자 함수 정의
+    // function Person(name, age, phoneNum) {
+    //     this.name = name;
+    //     this.age = age;
+    //     this.phoneNum = phoneNum;
+    // }
+    //
+    // // Person 프로토타입에 study 메서드 추가
+    // Person.prototype.study = function (student) {
+    //     student.dateUP();
+    // };
+    //
+    // // Ormi 생성자 함수 정의
+    // function Ormi(date) {
+    //     this.date = date;
+    // }
+    //
+    // // Ormi 프로토타입에 dateUP 메서드 추가
+    // Ormi.prototype.dateUP = function () {
+    //     this.date++;
+    // };
+    //
+    // // 인스턴스 생성
+    // const me = new Person('junho', '24세', '010-9767-6660');
+    // const ormi = new Ormi(1);
+    //
+    // // study 메서드 호출
+    // me.study(ormi);
+
+    // 결과 출력
+    console.log(ormi.date); // 2
+</script>
+</body>
+</html>
