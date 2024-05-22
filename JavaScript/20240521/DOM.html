@@ -8,6 +8,47 @@
     <title>Document</title>
 </head>
 <body>
+<!--<img-->
+<!--        class="terran battle-cruiser"-->
+<!--        src="battle-cruiser.png"-->
+<!--        alt="베틀크루져"-->
+<!--        data-ship-id="324"-->
+<!--        data-weapons="laser"-->
+<!--        data-health="400"-->
+<!--        data-mana="250"-->
+<!--        data-skill="yamato-cannon"-->
+<!--/>-->
+<!--<script>-->
+<!--    const img = document.querySelector('img')-->
+<!--    console.log(img.dataset);-->
+<!--    console.log(img.dataset.shipId);-->
+<!--    console.log(img.classList);-->
+<!--</script>-->
+
+
+<!--<p id='myTxt'>hello lions</p>-->
+<!--<img src='https://static.ebs.co.kr/images/public/lectures/2014/06/19/10/bhpImg/44deb98d-1c50-4073-9bd7-2c2c28d65f9e.jpg'>-->
+
+<ul></ul>
+<button>Make me MORE!</button>
+<script>
+    // const target = document.querySelector('p');
+    // const myimg = document.querySelector('img');
+    // const idAttr = target.getAttribute('id');
+    // console.log('id:',idAttr);
+    // console.log(myimg);
+    // myimg.setAttribute("src", "https://img.wendybook.com/image_detail/img159/159599_01.jpg");
+
+    const myBtn = document.querySelector("button");
+    const myUl = document.querySelector("ul");
+
+    myBtn.addEventListener('click', function(){
+        for(let i=0; i < 5; i++){
+            const myLi = document.createElement('li');
+            myUl.appendChild(myLi);
+        }
+    })
+</script>
 
 </body>
 </html>
